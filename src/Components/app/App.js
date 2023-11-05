@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+// Make sure the path is correct for your Symptom component
+import Symptom from './SymptomUI/Symptom'; // Adjust this path as needed
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p>TOS (Triage Ordering System)</p>
+        {/* The logo and learn react link have been removed */}
       </header>
+      {/* Render the Symptom component here */}
+      <Symptom />
     </div>
   );
 }
